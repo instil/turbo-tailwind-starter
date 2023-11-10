@@ -6,7 +6,8 @@
     "lint": "turbo lint",
     "clean": "turbo clean",
     "format": "turbo format",
-    "format:check": "turbo format:check"
+    "format:check": "turbo format:check",
+    "check-types": "turbo check-types"
   },
   "devDependencies": {
     "eslint": "^8.48.0",

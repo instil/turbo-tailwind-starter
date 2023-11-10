@@ -1,15 +1,8 @@
 import Image from "next/image";
-import { Card } from "ui";
+import {Card} from "ui";
+import {ExampleService} from "example-package";
 
-function Gradient({
-  conic,
-  className,
-  small,
-}: {
-  small?: boolean;
-  conic?: boolean;
-  className?: string;
-}): JSX.Element {
+function Gradient({conic, className, small}: {small?: boolean; conic?: boolean; className?: string}): JSX.Element {
   return (
     <span
       className={`absolute mix-blend-normal will-change-[filter] rounded-[100%] ${
@@ -38,12 +31,12 @@ const LINKS = [
   {
     title: "Deploy",
     href: "https://vercel.com/new",
-    description:
-      " Instantly deploy your Turborepo to a shareable URL with Vercel.",
+    description: " Instantly deploy your Turborepo to a shareable URL with Vercel.",
   },
 ];
 
 export default function Page(): JSX.Element {
+  ExampleService.helloWorld();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -127,8 +120,12 @@ export default function Page(): JSX.Element {
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        {LINKS.map(({ title, href, description }) => (
-          <Card href={href} key={title} title={title}>
+        {LINKS.map(({title, href, description}) => (
+          <Card
+            href={href}
+            key={title}
+            title={title}
+          >
             {description}
           </Card>
         ))}
