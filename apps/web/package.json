@@ -1,12 +1,14 @@
 {
-  "name": "docs",
+  "name": "web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"./src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "next": "^13.4.19",

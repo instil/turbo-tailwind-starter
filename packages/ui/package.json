@@ -14,7 +14,9 @@
     "build": "tsup",
     "lint": "eslint src/",
     "dev": "tsup --watch",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"./src/**/*.{ts,tsx}\""
   },
   "peerDependencies": {
     "react": "^18.2.0"

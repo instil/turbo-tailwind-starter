@@ -16,6 +16,8 @@
     },
     "clean": {
       "cache": false
-    }
+    },
+    "format": {},
+    "format:check": {}
   }
 }
