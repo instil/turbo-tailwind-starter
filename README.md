@@ -7,7 +7,7 @@ This is an official starter Turborepo.
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e https://github.com/instil/turbo-tailwind-starter.git
+npx create-turbo@latest -e https://github.com/instil/turbo-tailwind-starter
 ```
 
 ## What's inside?
