@@ -19,7 +19,7 @@
     "eslint-config-custom": "workspace:*",
     "prettier-config": "workspace:*",
     "tsconfig": "workspace:*",
-    "tsup": "^6.1.3",
+    "tsup": "^7.3.0",
     "typescript": "^5.1.6"
   }
 }
